@@ -79,3 +79,19 @@
     font-size: 15px;
     margin-right: 20px;
 }
+
+.image-container .image img {
+    animation: floatAnimation 5s infinite alternate ease-in-out;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
